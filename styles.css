@@ -7,15 +7,15 @@
 
 /* Header dan Navbar */
 .header {
-    position: fixed; /* Membuat header tetap di atas */
-    top: 0; /* Posisi di bagian atas layar */
-    width: 100%; /* Lebar header mengikuti layar */
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
     background-color: #333;
-    z-index: 1000; /* Memastikan header berada di depan elemen lain */
+    z-index: 1000;
 }
 
 .logo {
@@ -23,6 +23,12 @@
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+}
+
+/* Styling untuk navbar */
+.navbar {
+    display: flex;
+    gap: 10px;
 }
 
 .navbar a {
@@ -42,11 +48,6 @@
     border-radius: 5px;
 }
 
-.navbar {
-    display: flex;
-    gap: 10px;
-}
-
 /* Memberikan ruang pada bagian konten agar tidak tertutup header tetap */
 section {
     padding: 100px 20px;
@@ -60,4 +61,36 @@ section {
 
 .homebar span {
     color: #007bff;
+}
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Sembunyikan navbar pada layar kecil */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+
+    /* Tombol hamburger */
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
 }

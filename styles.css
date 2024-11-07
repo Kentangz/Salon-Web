@@ -1,96 +1,74 @@
-/* Reset CSS */
-* {
-    margin: 0;
+*{
+    margin : 0;
     padding: 0;
+    font-family: "";
     box-sizing: border-box;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    color: white;
 }
 
-/* Header dan Navbar */
-.header {
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+}
+
+.header{
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
+    padding: 2rem 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background-color: #333;
-    z-index: 1000;
+    z-index: 100;
+
 }
 
-.logo {
-    font-size: 24px;
-    color: #fff;
+.Ettyma{
+    font-size: 1.7rem;
+    color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    cursor: pointer;
 }
 
-/* Styling untuk navbar */
-.navbar {
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 4rem;
+    font-size: 1.7rem;
+    transition: 1s;
+}
+
+.navbar a:hover,.navbar a:active{
+    color: rgb(6, 50, 146);
+}
+
+section{
+    min-height: 10vh;
+    padding: 10rem 9% 2rem;
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
+.homebar{
+    display: flex;
+    font-size: 60px;
+    color: rgb(255, 42, 0);
+    
 }
 
-.navbar a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
-
-.navbar .active {
-    background-color: #444;
-    border-radius: 5px;
-}
-
-/* Memberikan ruang pada bagian konten agar tidak tertutup header tetap */
-section {
-    padding: 100px 20px;
-    text-align: center;
-}
-
-.homebar {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.homebar span {
-    color: #007bff;
-}
-
-/* Media Query untuk tampilan mobile */
-@media (max-width: 768px) {
-    .navbar {
-        display: none; /* Sembunyikan navbar pada layar kecil */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #333;
-        width: 100%;
-        padding: 20px;
-    }
-
-    .navbar a {
-        display: block;
-        padding: 15px;
-        text-align: center;
-    }
-
-    .header {
-        justify-content: space-between;
-    }
-
-    /* Tombol hamburger */
-    .menu-toggle {
-        display: block;
-        font-size: 24px;
-        color: #fff;
-        cursor: pointer;
-    }
+About, Pict{
+    background-color: black;
 }

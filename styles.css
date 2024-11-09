@@ -1,7 +1,7 @@
 *{
     margin : 0;
     padding: 0;
-    font-family: "";
+    font-family: "Arial";
     box-sizing: border-box;
     border: none;
     outline: none;
@@ -21,6 +21,7 @@ body{
 
 .header{
     position: fixed;
+    background-color: rgb(255, 255, 255);
     top: 0;
     left: 0;
     width: 100%;
@@ -32,16 +33,16 @@ body{
 
 }
 
-.Ettyma{
+.logo{
     font-size: 1.7rem;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: 700;
     cursor: pointer;
 }
 
 .navbar a{
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: 500;
     display: inline-block;
@@ -50,8 +51,8 @@ body{
     transition: 1s;
 }
 
-.navbar a:hover,.navbar a:active{
-    color: rgb(6, 50, 146);
+.navbar a:hover,.navbar a.active{
+    color: rgb(122, 37, 99);
 }
 
 section{
@@ -69,6 +70,6 @@ section{
     
 }
 
-About, Pict{
-    background-color: black;
+.About, .Pict{
+    background: black;
 }
